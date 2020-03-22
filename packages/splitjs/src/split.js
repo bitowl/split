@@ -641,6 +641,7 @@ const Split = (idsOption, options = {}) => {
                 gutterElement[addEventListener](
                     'touchstart',
                     pair[gutterStartDragging],
+                    { passive: true },
                 )
 
                 parent.insertBefore(gutterElement, element.element)
